@@ -1,5 +1,5 @@
 cc_library(
-	name = "xxhash",
-	hdrs = glob(["*.h"]),
-	srcs = glob(["*.c"]),
+    name = "xxhash",
+    srcs = glob(["*.c"]),
+    hdrs = glob(["*.h"]),
 )

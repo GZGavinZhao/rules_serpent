@@ -5,21 +5,21 @@ lmdb_d_imports = ["source"]
 d_library(
     name = "lmdb_d",
     srcs = [
-		"source/lmdb/binding.d",
-		"source/lmdb/macros.d",
-	],
-	deps = ["@lmdb//:lmdb"],
-	imports = lmdbd_imports,
+        "source/lmdb/binding.d",
+        "source/lmdb/macros.d",
+    ],
+    imports = lmdbd_imports,
+    deps = ["@lmdb"],
 )
 
 d_test(
-	name = "lmdb_d_test",
-	srcs = ["source/lmdb/package.d"],
-	deps = [":lmdb_d"],
-	imports = lmdbd_imports,
+    name = "lmdb_d_test",
+    srcs = ["source/lmdb/package.d"],
+    imports = lmdbd_imports,
+    deps = [":lmdb_d"],
 )
 
 d_docs(
-	name = "lmdb_d_docs",
-	dep = ":lmdb_d",
+    name = "lmdb_d_docs",
+    dep = ":lmdb_d",
 )
