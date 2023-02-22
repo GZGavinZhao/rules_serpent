@@ -1,3 +1,5 @@
+package(default_visibility = ["//visibility:public"])
+
 libzstd_includes = [
     "lib",
     "lib/common",

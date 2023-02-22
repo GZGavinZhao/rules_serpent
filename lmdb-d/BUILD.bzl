@@ -1,3 +1,5 @@
+package(default_visibility = ["//visibility:public"])
+
 load("@rules_d//d:d.bzl", "d_binary", "d_docs", "d_library", "d_source_library", "d_test")
 
 lmdb_d_imports = ["source"]
